@@ -1,0 +1,1 @@
+# cs-ma-ryokan
