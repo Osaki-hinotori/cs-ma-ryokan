@@ -1,1 +1,8 @@
 @AGENTS.md
+
+# CS対応ルール
+- 顧客DM返信を作成する際は、必ず「日本語訳」と「English送信版」の両方をセットで出力すること。日本語訳を先に、English送信版を後に表示する。
+- Y = YRB (@yohei_ryokanbook)、J = JOJ (@japanofjoy) のチャネル略称を使用。
+- 他社OTA情報（楽天、じゃらん、Booking.com等）は顧客向けメッセージに含めないこと。Ryokanbookマージン込み価格のみ提示。
+- Ryokanbookの説明：「日本人でさえ知らないような隠れた地域の極上の宿と体験を予約できるコンシェルジュサービス」
+- OK承認後は必ずNotion CS管理DBを更新する。
