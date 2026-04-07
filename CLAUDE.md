@@ -189,3 +189,69 @@ JoJにDM → 初回返信（カジュアル）+ @yohei_ryokanbook を案内 → 
 
 会話内で画像が8〜10枚になったら、「そろそろ画像上限が近いので、次の対応は新しい会話で始めましょう」と事前通知。
 上限に達してからでは遅い。**必ず事前に知らせる。**
+
+---
+
+## 9. Slack連携ルール
+
+### 大﨑タスク通知
+- チャンネル: `#2_ryokanbook_cs_inbox` (ID: `C0APC5NDKR9`)
+- Bot Token: `SLACK_BOT_TOKEN`（Vercel環境変数に設定済み）
+- フォーマット: 📋 大﨑タスク → タスク内容 → 顧客名・チャネル・時刻
+
+### タスク生成ルール
+- AIが会話内容から200文字以内の簡潔なタスクを日本語で生成
+- 「誰の」「何のチャネルで」「何が起きて」「次に何をすべきか」を含む
+- 例: 「【LINE】田中さん：会津エリア希望、4名12月。旅程提案＆見積もり作成お願いします。タトゥーあり→当龍館推薦済み。」
+- 生成後にYoheiが確認・編集してからSlackに送信（自動送信ではない）
+
+### 大﨑タスクの用途
+- 旅館への見積もり依頼
+- 予約確認・仮押さえ
+- 電話確認依頼
+- 送迎手配
+- その他オペレーション業務
+
+### オペレーション用Slackチャンネル
+- チャンネル: `#2_ryokanbook_オペレーション` (ID: `C09L9EYU0QL`)
+- 大﨑メンション: `<@U06QHC1JGPP>`
+- こちらは直接の業務依頼用。CSインボックスとは別チャンネル
+
+---
+
+## 10. Webhook連携（自動受信）
+
+### WebhookアプリURL
+`https://ryokanbook-webhook.vercel.app/api/webhook`
+
+### Meta App
+RB_CS（App ID: `974296498355246`）
+
+### 自動処理フロー
+1. Instagram/WhatsApp DMが来る
+2. Meta Webhook → ryokanbook-webhook が受信
+3. Instagram Graph APIで送信者の名前を自動解決（YRB/JoJの両トークンでフォールバック）
+4. Notion CS管理DBに自動登録（顧客ページ作成+メッセージ追加）
+5. Slack `#2_ryokanbook_cs_inbox` に通知
+
+### チャネル自動判別
+| entry.id | チャネル |
+|----------|---------|
+| `17841407360154074` | Insta_YRB (@yohei_ryokanbook) |
+| `17841474294901724` | Insta_JoJ (@japan_of_japan_) |
+
+### フィルタ（ゴミデータ防止）
+- `sender_id` が空のメッセージは無視（既読通知・リアクション等）
+- `is_echo`（自分の送信）は無視
+- `is_deleted` は無視
+
+### 環境変数（Vercel上のryokanbook-webhook）
+| 変数名 | 用途 |
+|--------|------|
+| `INSTAGRAM_ACCESS_TOKEN` | @yohei_ryokanbook用トークン |
+| `INSTAGRAM_JOJ_ACCESS_TOKEN` | @japan_of_japan_用トークン |
+| `NOTION_API_KEY` | Notion API |
+| `NOTION_CS_DB_ID` | Notion CS管理DB ID |
+| `SLACK_BOT_TOKEN` | Slack通知用 |
+| `META_ACCESS_TOKEN` | WhatsApp用（未設定） |
+| `WHATSAPP_PHONE_NUMBER_ID` | WhatsApp用（未設定） |
