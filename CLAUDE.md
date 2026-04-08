@@ -88,7 +88,7 @@ ryokan-book.com/en/ryokan/ookawaso/
 只有8間房的溫馨小旅館，24小時天然溫泉。老闆親自帶你夜遊大內宿古街，這種體驗別的地方找不到！
 ryokan-book.com/en/ryokan/hoshinoi/
 
-♨️ 東鳳館（湯上溫泉・福島）
+♨️ 藤龍館（湯上溫泉・福島）
 每間房都有私人溫泉！懷石料理超精緻，窗外就是溪谷美景。想要安靜奢華的體驗，這裡完美。
 ryokan-book.com/en/ryokan/touryukan/
 
@@ -156,7 +156,7 @@ Yohei
 | 旅館名 | URL | タトゥー |
 |--------|-----|---------|
 | 星乃井 Hoshinoi | https://ryokan-book.com/en/ryokan/hoshinoi/ | - |
-| 東鳳館 Touryukan | https://ryokan-book.com/en/ryokan/touryukan/ | OK |
+| 藤龍館 Touryukan | https://ryokan-book.com/en/ryokan/touryukan/ | OK |
 | 錦谷 Nishikiya | https://ryokan-book.com/en/ryokan/nishikiya/ | OK |
 | 大川荘 Ookawaso | https://ryokan-book.com/en/ryokan/ookawaso/ | - |
 | 本家扇屋 Honke Ogiya | https://ryokan-book.com/en/ryokan/honke-ogiya/ | - |
