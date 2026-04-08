@@ -62,6 +62,80 @@ Let me know what interests you!
 - 相手が具体的な日程を書いている場合はテンプレ不使用、個別対応
 - 相手の言語が英語以外（中国語等）→ その言語で返す
 
+### LINE/エルメ初回テンプレート（ボタンタップのみ・メッセージなしパターン）
+
+相手が「Yoheiに相談」等のボタンを押しただけで具体的なメッセージがない場合に使用。
+ヒアリング＋会津3旅館のYoheiおすすめを先出しする。
+
+**繁体字中国語版:**
+```
+你好！感謝你聯繫Ryokanbook 🌸
+
+我是Yohei，專門幫旅客找到連日本人都不知道的隱藏版溫泉旅館！
+
+請問方便告訴我以下資訊嗎？
+預計什麼時候來日本？
+幾位旅客？
+有興趣的地區？
+
+在你考慮的同時，先分享幾間我個人最推薦的旅館 👇
+
+🏯 大川莊（會津若松・福島）
+我最愛的旅館之一！河邊的階梯式露天溫泉，晚上還有現場三味線演奏。這裡就是《鬼滅之刃》無限城的原型！
+ryokan-book.com/en/ryokan/ookawaso/
+
+🏮 星乃井（湯上溫泉・福島）
+只有8間房的溫馨小旅館，24小時天然溫泉。老闆親自帶你夜遊大內宿古街，這種體驗別的地方找不到！
+ryokan-book.com/en/ryokan/hoshinoi/
+
+♨️ 東鳳館（湯上溫泉・福島）
+每間房都有私人溫泉！懷石料理超精緻，窗外就是溪谷美景。想要安靜奢華的體驗，這裡完美。
+ryokan-book.com/en/ryokan/touryukan/
+
+這三間都在「會津」地區——東京搭新幹線+電車約3小時，是日本最被低估的秘境之一 ✨
+
+告訴我你的旅行計畫，我來幫你配最完美的行程！
+
+Yohei
+```
+
+**英語版:**
+```
+Hi! Thanks for reaching out to Ryokanbook 🌸
+
+I'm Yohei -- I help travelers find hidden onsen ryokans that even most Japanese don't know about!
+
+Could you tell me:
+When are you planning to visit Japan?
+How many guests?
+Any areas you're interested in?
+
+While you're thinking, here are a few of my personal favorites 👇
+
+🏯 Ookawaso (Aizu, Fukushima)
+One of my all-time favorites! Terraced open-air baths right by the river, with live shamisen music at night. This is the real-life model for the Infinity Castle in Demon Slayer!
+ryokan-book.com/en/ryokan/ookawaso/
+
+🏮 Hoshinoi (Yunokami Onsen, Fukushima)
+A cozy 8-room inn with 24hr natural onsen. The owner personally takes you on a night tour of Ouchi-juku -- an experience you won't find anywhere else!
+ryokan-book.com/en/ryokan/hoshinoi/
+
+♨️ Touryukan (Yunokami Onsen, Fukushima)
+Private onsen in every room! Exquisite kaiseki dinner with stunning gorge views. Perfect for a quiet, luxurious escape.
+ryokan-book.com/en/ryokan/touryukan/
+
+All three are in the Aizu area -- about 3 hours from Tokyo by shinkansen + train, one of Japan's most underrated hidden gems ✨
+
+Tell me about your trip and I'll put together the perfect plan!
+
+Yohei
+```
+
+**注意事項:**
+- 相手の言語に合わせて使い分ける
+- 日本語話者の場合は日本語版を別途作成
+- 相手が具体的な日程や希望を既に書いている場合はテンプレ不使用、個別対応
+
 ---
 
 ## 3. URL・リンクルール
