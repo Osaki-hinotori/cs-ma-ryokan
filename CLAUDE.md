@@ -160,16 +160,16 @@ Yohei
 ### 旅館カタログ（推薦時はこのURLを使う）
 
 #### 会津 Aizu
-| 旅館名 | URL | タトゥー |
-|--------|-----|---------|
-| 星乃井 Hoshinoi | https://ryokan-book.com/en/ryokan/hoshinoi/ | - |
-| 藤龍館 Touryukan | https://ryokan-book.com/en/ryokan/touryukan/ | OK |
-| 錦谷 Nishikiya | https://ryokan-book.com/en/ryokan/nishikiya/ | OK |
-| 大川荘 Ookawaso | https://ryokan-book.com/en/ryokan/ookawaso/ | - |
-| 本家扇屋 Honke Ogiya | https://ryokan-book.com/en/ryokan/honke-ogiya/ | - |
-| 芦名 Ashina | https://ryokan-book.com/en/ryokan/ashina/ | - |
-| 鶴我 Tsuruga | https://ryokan-book.com/en/ryokan/tsuruga/ | - |
-| みなとや Minatoya | https://ryokan-book.com/en/ryokan/minatoya/ | - |
+| 旅館名 | URL | タトゥー | ベジタリアン |
+|--------|-----|---------|------------|
+| 星乃井 Hoshinoi | https://ryokan-book.com/en/ryokan/hoshinoi/ | - | NG |
+| 藤龍館 Touryukan | https://ryokan-book.com/en/ryokan/touryukan/ | OK | OK |
+| 錦谷 Nishikiya | https://ryokan-book.com/en/ryokan/nishikiya/ | OK | - |
+| 大川荘 Ookawaso | https://ryokan-book.com/en/ryokan/ookawaso/ | - | OK |
+| 本家扇屋 Honke Ogiya | https://ryokan-book.com/en/ryokan/honke-ogiya/ | - | - |
+| 芦名 Ashina | https://ryokan-book.com/en/ryokan/ashina/ | - | - |
+| 鶴我 Tsuruga | https://ryokan-book.com/en/ryokan/tsuruga/ | - | - |
+| みなとや Minatoya | https://ryokan-book.com/en/ryokan/minatoya/ | - | - |
 
 #### 新潟 Niigata
 | 旅館名 | URL | タトゥー |
