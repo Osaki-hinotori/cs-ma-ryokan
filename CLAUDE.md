@@ -241,7 +241,7 @@ Yohei
 |---------|------|
 | Insta_JoJ | @japan_of_japan_ に来たDM |
 | Insta_YRB | @yohei_ryokanbook に来たDM |
-| Insta_JoJ→YRB | JoJから来てYRBに移行済み |
+| JY | JoJから来てYRBに移行済み（旧表記: Insta_JoJ→YRB） |
 | WhatsApp | WhatsApp |
 | LINE | LINE |
 | Messenger | Facebook Messenger |
