@@ -42,23 +42,25 @@ Instagram DMは1,000文字制限。返信は950文字以内に収める。超え
 
 ```
 Hi! Yohei from Ryokanbook here 😊
-I'd love to help you plan a ryokan trip in Japan -- stays, local experiences, and travel routes!
 
-When are you planning to visit, how many guests, and what do you want most: onsen, food, or nature?
+I find hidden onsen ryokans that even most Japanese don't know about -- plus transport, local experiences, and full trip planning!
 
-Here are a few recommendations:
+Planning a trip to Japan? I'd love to know:
+When are you visiting, how many guests, and what excites you most: onsen, food, nature, or culture?
+
+Here are a few favorites 👇
 
 🏯 Ookawaso (Aizu, Fukushima)
-Riverside ryokan with terraced open-air baths & live shamisen -- the real-life Demon Slayer castle!
-ryokan-book.com/en/ryokan/ookawaso/
+River-side terraced baths & live shamisen -- the real Demon Slayer castle!
+https://ryokan-book.com/en/ryokan/ookawaso/
 
 🏮 Hoshinoi (Yunokami Onsen, Fukushima)
-Cozy 8-room inn near Ouchi-juku with 24hr natural onsen & free guided night tour by the owner.
-ryokan-book.com/en/ryokan/hoshinoi/
+8-room inn, 24hr onsen & owner-guided night tour of a 300-year-old village!
+https://ryokan-book.com/en/ryokan/hoshinoi/
 
 ♨️ Touryukan (Yunokami Onsen, Fukushima)
-12-room hideaway with private onsen in every suite, kaiseki dinners & gorge views.
-ryokan-book.com/en/ryokan/touryukan/
+Private onsen in every room, kaiseki dinner & gorge views.
+https://ryokan-book.com/en/ryokan/touryukan/
 
 Let me know what interests you!
 ```
