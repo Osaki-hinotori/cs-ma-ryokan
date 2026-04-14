@@ -243,6 +243,20 @@ Yohei
 - From: info@ryokan-book.com
 - CC: osaki@hinotori-trip.com
 
+### メール顧客へのWhatsApp移行促進（必須）
+メールで来た顧客には、返信内でWhatsAppへの移行を促す。やり取りのスピードが圧倒的に違うため。
+以下のフォーマットで番号とリンクを併記する：
+
+```
+Would it be easier to continue on WhatsApp? Much quicker for back and forth:
+📱 +81 90-4067-2289 (https://wa.me/819040672289)
+```
+
+**注意事項:**
+- 初回メール返信時に必ず含める
+- 番号とリンクは必ず併記（どちらか片方だけにしない）
+- 相手の言語に合わせて文面を調整する（中国語の場合は中国語で）
+
 ### 入湯税・宿泊税
 - 現地にてお客様に直接請求（Ryokanbook側では徴収しない）
 
