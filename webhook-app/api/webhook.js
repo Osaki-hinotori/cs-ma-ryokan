@@ -1,5 +1,5 @@
 const { resolveInstagramUser } = require('../lib/instagram');
-const { findCustomerByChannel, createCustomerPage, appendMessage, updatePageProperties } = require('../lib/notion');
+const { findCustomer, createCustomerPage, appendMessage, isDuplicateMessage, updatePageProperties } = require('../lib/notion');
 const { notifyNewMessage } = require('../lib/slack');
 const { generateDraft } = require('../lib/claude');
 
@@ -83,10 +83,16 @@ async function processInstagramMessage(event, channel) {
 
   console.log(`[${channel}] ${displayName}: ${messageText}`);
 
-  // Find or create customer in Notion
-  let customer = await findCustomerByChannel(displayName, channel);
+  // Find or create customer in Notion (by externalId, then name fallback)
+  let customer = await findCustomer(senderId, displayName, channel);
   if (!customer) {
     customer = await createCustomerPage(displayName, channel, senderId);
+  }
+
+  // Dedup: skip if this message was already recorded (Meta webhook retry)
+  if (await isDuplicateMessage(customer.id, messageText, timestamp)) {
+    console.log(`[${channel}] Duplicate message skipped: ${displayName}`);
+    return;
   }
 
   // Append incoming message to Notion page
@@ -112,10 +118,16 @@ async function processInstagramMessage(event, channel) {
     await appendMessage(customer.id, 'draft', 'Yohei (AI Draft)', draft, new Date().toISOString());
   }
 
-  // Update CS status
-  await updatePageProperties(customer.id, {
-    'CSステータス': { select: { name: '初回返信待ち' } },
-  });
+  // Update CS status: only set to '初回返信待ち' for new customers
+  if (customer.isNew) {
+    await updatePageProperties(customer.id, {
+      'CSステータス': { select: { name: '初回返信待ち' } },
+    });
+  } else {
+    await updatePageProperties(customer.id, {
+      'CSステータス': { select: { name: '返信待ち' } },
+    });
+  }
 
   // Notify Slack
   await notifyNewMessage({
@@ -141,10 +153,16 @@ async function processWhatsAppMessage(msg, value) {
 
   console.log(`[${channel}] ${displayName}: ${messageText}`);
 
-  // Find or create customer in Notion
-  let customer = await findCustomerByChannel(displayName, channel);
+  // Find or create customer in Notion (by externalId, then name fallback)
+  let customer = await findCustomer(senderId, displayName, channel);
   if (!customer) {
     customer = await createCustomerPage(displayName, channel, senderId);
+  }
+
+  // Dedup: skip if this message was already recorded (Meta webhook retry)
+  if (await isDuplicateMessage(customer.id, messageText, timestamp)) {
+    console.log(`[${channel}] Duplicate message skipped: ${displayName}`);
+    return;
   }
 
   // Append incoming message
@@ -169,9 +187,16 @@ async function processWhatsAppMessage(msg, value) {
     await appendMessage(customer.id, 'draft', 'Yohei (AI Draft)', draft, new Date().toISOString());
   }
 
-  await updatePageProperties(customer.id, {
-    'CSステータス': { select: { name: '初回返信待ち' } },
-  });
+  // Update CS status: only set to '初回返信待ち' for new customers
+  if (customer.isNew) {
+    await updatePageProperties(customer.id, {
+      'CSステータス': { select: { name: '初回返信待ち' } },
+    });
+  } else {
+    await updatePageProperties(customer.id, {
+      'CSステータス': { select: { name: '返信待ち' } },
+    });
+  }
 
   await notifyNewMessage({
     customerName: displayName,
